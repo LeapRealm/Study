@@ -515,11 +515,11 @@ Actor를 상속받는 블루프린트 클래스를 만들고 이름을 B_Experie
 <br/>
 
 B_ExperienceList3D를 열어서 3개의 변수를 추가합니다. 
-|변수 이름|변수 타입|컨테이너 타입|
-|------|---|---|
+|변수 이름|변수 타입|컨테이너 타입|기본 값|
+|------|---|---|---|
 |UserFacingExperienceList|LyraUserFacingExperienceDefinition|배열|
 |ExperiencePortals|B_TeleportToUserFacingExperience|배열|
-|PortalSpacing|Float|단일|
+|PortalSpacing|Float|단일|300|
 
 ![image](https://github.com/LeapRealm/Study/assets/43628076/cfe5ac49-5cdc-4d09-9159-4086c9960a76)
 
@@ -539,7 +539,7 @@ PrimaryDataAssetID 목록을 이용해서 애셋들의 비동기 로드를 진�
 UserFacingExperienceList를 순회하면서 텔레포트를 하나씩 스폰합니다. <br/>
 B_ExperienceList3D의 로컬 좌표계 기준으로 스폰 위치를 계산하고, Transform Location 노드를 통해 월드 좌표계로 변환하여 최종적인 스폰 위치를 정합니다. 
 텔레포트를 스폰할때 UserFacingExperience를 세팅해줍니다. 스폰된 텔레포트는 나중에 사용하기 위해 Experience Portals 배열에 추가시켜줍니다.<br/><br/>
-![image](https://github.com/LeapRealm/Study/assets/43628076/fd50f47f-66a1-450f-9f4d-e19a3e6d231b)
+![19](https://github.com/LeapRealm/Study/assets/43628076/6d60249e-8e9a-47ba-adc7-5de4c90f4be5)
 
 <br/>
 
